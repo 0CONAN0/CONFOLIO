@@ -1,0 +1,271 @@
+.section1-background {
+    width: 100vw;
+    height: 1530px;
+    background-image: url('./layered-waves-haikei.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section2-background {
+    width: 100vw;
+    height: max-content;
+    background-image: url('./wave-haikei\ \(1\).svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section3-background {
+    width: 100vw;
+    height: 800px;
+    background-image: url('./blurry-gradient-haikei.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    background-color: var(--maincolor);
+    height: 90px;
+    text-transform: uppercase;
+    font-weight: 650;
+    font-size: large;
+    z-index: 99999;
+    width: auto;
+    border-bottom: #06d6a0 solid 3px;
+
+}
+
+#nav-image {
+    width: 200px;
+    height: 60px;
+    margin-left: 10px;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #06d6a0;
+    padding: 10px;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #ffd166;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+:root {
+    --maincolor: #001122
+}
+
+h3 {
+    color: var(--maincolor);
+    font-family: "Kanit";
+    font-weight: 400;
+    font-size: 40px;
+    margin-top: 250px;
+}
+
+h1 {
+    color: var(--maincolor);
+    font-family: "Kanit";
+    font-weight: 600;
+    font-size: 80px;
+}
+
+h4 {
+    color: var(--maincolor);
+    font-family: "Kanit";
+    font-weight: 500;
+    font-size: 35px;
+
+}
+
+#hovered-button {
+    background-color: #06d6a0;
+    border-radius: 15px;
+    box-shadow: 0px 1px 15px rgb(151, 172, 176);
+    border: solid 0px;
+    font-weight: 560;
+    font-family: "Kanit";
+    font-size: large;
+    text-transform: uppercase;
+    color: #014455;
+    width: 240px;
+    height: 55px;
+    transition: all 0.5s ease;
+    position: relative;
+    margin-top: 130px;
+}
+
+#hovered-button:hover {
+    background-color: #00cc96;
+    transform: translateY(-10%) scale(1.09, 1.11);
+}
+
+#icons-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+    margin-right: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff9fb;
+    padding: 15px;
+}
+
+#social-blue:hover {
+    color: hwb(0 0% 100%);
+}
+
+#social-red:hover {
+    color: rgb(255, 37, 37);
+}
+
+#social-purple:hover {
+    color: rgb(255, 0, 144);
+}
+
+#social-gray:hover {
+    color: rgb(0, 28, 76);
+}
+
+#about-title {
+    color: #ffd166;
+    margin-left: 580px;
+    margin-top: 300px;
+    font-family: "Kanit";
+}
+
+.image-portfolio {
+    background-color: #00cc96;
+    width: fit-content;
+    display: flex;
+    position: absolute;
+    margin-top: 390px;
+    left: 200px;
+    border-radius: 100px 100px 10px 10px;
+}
+
+#owener-image {
+    width: 300px;
+    height: 310px;
+    box-shadow: 0px 1px 15px rgb(94, 115, 119);
+    border-radius: 100px 100px 10px 10px;
+}
+
+#about-text {
+    font-weight: 400;
+    font-size: larger;
+    font-family: "Kanit";
+    color: #00cc96;
+    width: 1200px;
+    margin-left: 580px;
+}
+
+.cards-title {
+    width: 100vw;
+    padding-top: 100px;
+    background-color: var(--maincolor);
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#cards-section {
+    padding-top: 120px;
+    margin-left: 135px;
+    font-family: "Kanit";
+}
+
+#cards-row2 {
+    margin-top: 50px;
+}
+
+.contact-title {
+    background-color: #FCAF3C;
+    width: 104%;
+    padding-top: 140px;
+    margin-left: -30px;
+    text-align: center;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+form {
+    position: absolute;
+    margin-top: 200px;
+    left: 630px;
+    padding: 30px;
+    font-family: "Kanit";
+    text-align: center;
+}
+
+#cotact-field {
+    background-color: #ffffffe3;
+    box-shadow: 0.3px 0.3px 10px #bcbcbc92;
+    border-radius: 15px;
+    width: 800px;
+    height: 480px;
+}
+
+#first-name {
+    position: absolute;
+    left: 15px;
+    padding-top: 10px;
+}
+
+#second-name {
+    position: absolute;
+    right: 20px;
+    padding-top: 10px;
+}
+
+#email-field {
+    position: absolute;
+    top: 120px;
+}
+
+#telephone {
+    position: absolute;
+    top: 200px;
+}
+
+#text-area {
+    position: absolute;
+    top: 290px;
+}
+
+textarea {
+    max-height: 100px;
+}
+
+#input-width1 {
+    width: 300px;
+}
+
+#submit-button {
+    background-color: #06d69e;
+    border-radius: 15px;
+    box-shadow: 0px 1px 15px rgb(151, 172, 176);
+    border: solid 0px;
+    font-weight: 560;
+    font-family: "Kanit";
+    font-size: large;
+    text-transform: uppercase;
+    color: #014455;
+    width: 240px;
+    height: 40px;
+    position: relative;
+    margin-top: 40px;
+}
+
+#submit-button:hover {
+    background-color: #00b383;
+}
