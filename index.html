@@ -15,7 +15,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <script src="main.js"></script>
 </head>
 <header>
     <nav class="navbar fixed-top navbar-expand-lg">
@@ -53,6 +52,8 @@
 </header>
 
 <body>
+    <div class="container text-center my-5">
+    </div>
     <div class="section1-background">
         <div class="section1">
             <h3>My name is Ahmed</h3>
@@ -60,156 +61,162 @@
             <h4>I build the amazing websites</h4>
             <a href="projects.html"><button class="view-my-work-button" id="hovered-button">View my work</button></a>
         </div>
-        <div class="image-portfolio">
-            <img src="media/edited-image.png" alt="Portfolio owener image" id="owener-image">
+        <div class="container">
+            <div class="row justify-content-center my-5" id="s0">
+                <div class="col-auto">
+                    <ul id="icons-list" class="list-unstyled d-flex flex-wrap justify-content-center">
+                        <li class="mx-2"><a href="https://x.com/detCONANaa12" target="_blank"><i
+                                    class="fa-brands fa-x-twitter fa-2x" id="social-blue"></i></a></li>
+                        <li class="mx-2"><a href="https://www.youtube.com/channel/UCX9CU1oKq50WX9KfIdrufgw"
+                                target="_blank"><i class="fa-brands fa-youtube fa-2x" id="social-red"></i></a></li>
+                        <li class="mx-2"><a href="https://www.instagram.com/conan_bek12/" target="_blank"><i
+                                    class="fa-brands fa-instagram fa-2x" id="social-purple"></i></a></li>
+                        <li class="mx-2"><a href="https://github.com/0CONAN0" target="_blank"><i
+                                    class="fa-brands fa-github fa-2x" id="social-gray"></i></a></li>
+                        <li class="mx-2"><a href="https://www.linkedin.com/in/ahmed-abd-elhameed-232504250/"
+                                target="_blank"><i class="fa-brands fa-linkedin fa-2x" id="social-gray"></i></a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="icons_field" id="s0">
-            <ul id="icons-list">
-                <li><a href="https://x.com/detCONANaa12" target="_blank"><i class="fa-brands fa-x-twitter fa-2x"
-                            id="social-blue"></i></a></li>
-                <li><a href="https://www.youtube.com/channel/UCX9CU1oKq50WX9KfIdrufgw" target="_blank"><i
-                            class="fa-brands fa-youtube fa-2x" id="social-red"></i></a></li>
-                <li><a href="https://www.instagram.com/conan_bek12/" target="_blank"><i
-                            class="fa-brands fa-instagram fa-2x" id="social-purple"></i></a></li>
-                <li><a href="https://github.com/0CONAN0" target="_blank"><i class="fa-brands fa-github fa-2x"
-                            id="social-gray"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/ahmed-abd-elhameed-232504250/" target="_blank"><i
-                            class="fa-brands fa-linkedin fa-2x" id="social-gray"></i></a></li>
-            </ul>
+        <div class="container">
+            <div class="about-section row">
+                <div class="col-md-4 col-sm-12 text-center">
+                    <div class="image-portfolio">
+                        <img src="media/edited-image.png" alt="Portfolio owner image" id="owner-image" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-8 col-sm-12" >
+                    <h3 id="about-title">About me:</h3>
+                    <p id="about-text">
+                        Hello! I'm a 17-year-old web developer from Egypt with a passion for creating dynamic and user-friendly
+                        websites. With a strong foundation in front-end and back-end technologies, I thrive on bringing
+                        innovative ideas to life through clean and efficient code. Whether it's crafting responsive layouts or
+                        integrating complex functionalities, I am dedicated to delivering high-quality digital solutions that
+                        meet the needs of users and clients alike.
+                        As I continue to grow in this ever-evolving field, I'm excited to take on new challenges and explore the
+                        latest trends in web development. My goal is to not only build visually appealing websites but also to
+                        ensure they are optimized for performance and accessibility.
+                        Feel free to explore my work, and if you're interested in collaborating or learning more about my
+                        journey, don't hesitate to reach out!
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="about-section">
-            <h3 id="about-title">About me:</h3>
-            <p id="about-text">
-                Hello! I'm a 17-year-old web developer from Egypt with a passion for creating dynamic and user-friendly
-                websites. With a strong foundation in front-end and back-end technologies, I thrive on bringing
-                innovative ideas to life through clean and efficient code. Whether it's crafting responsive layouts or
-                integrating complex functionalities, I am dedicated to delivering high-quality digital solutions that
-                meet the needs of users and clients alike.
-                As I continue to grow in this ever-evolving field, I'm excited to take on new challenges and explore the
-                latest trends in web development. My goal is to not only build visually appealing websites but also to
-                ensure they are optimized for performance and accessibility.
-                Feel free to explore my work, and if you're interested in collaborating or learning more about my
-                journey, don't hesitate to reach out!</p>
-        </div>
+        
     </div>
-    <div class="cards-title">
+    <div class="section2-background" id="s1">   
+        <div class="cards-title" >
         <h2>Here's some of my Skills</h2>
-        <i class="fa-solid fa-arrow-down fa-3x" style="color: #06d6a0; margin-top: 60px;" id="s1"></i>
+        <i class="fa-solid fa-arrow-down fa-3x" style="color: #06d6a0; margin-top: 60px;"></i>
     </div>
-    <div class="section2-background">
-        <div class="row row-cols-1 row-cols-md-3 g-4" id="cards-section">
-            <div class="col">
-                <div class="card h-100 text-center w-75 p-3">
-                    <i class="fa-brands fa-html5 fa-7x card-img-top " style="color:  #e34c26;"></i>
+    <div class="container">
+        <div class="row justify-content-center" id="cards-section">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card h-100 text-center">
+                    <i class="fa-brands fa-html5 fa-7x card-img-top" style="color: #e34c26;"></i>
                     <div class="card-body">
                         <h5 class="card-title">HTML5</h5>
                         <p class="card-text">
-                            HTML5 is the latest version of the markup language used to structure web content. It
-                            supports multimedia elements, offline browsing, and better semantic markup, enhancing web
-                            accessibility and SEO.
+                            HTML5 is the latest version of the markup language used to structure web content. It supports multimedia elements, offline browsing, and better semantic markup, enhancing web accessibility and SEO.
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card h-100 text-center w-75 p-3">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card h-100 text-center">
                     <i class="fa-brands fa-css3-alt fa-7x card-img-top" style="color: #264de4;"></i>
                     <div class="card-body">
                         <h5 class="card-title">CSS3</h5>
                         <p class="card-text">
-                            CSS3 is the styling language that controls the appearance of web content. It introduces
-                            advanced features like animations, transitions, and responsive design, allowing for visually
-                            appealing and adaptable websites.
+                            CSS3 is the styling language that controls the appearance of web content. It introduces advanced features like animations, transitions, and responsive design, allowing for visually appealing and adaptable websites.
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card h-100 text-center w-75 p-3">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card h-100 text-center">
                     <i class="fa-brands fa-js fa-7x card-img-top" style="color: #f0db4f;"></i>
                     <div class="card-body">
                         <h5 class="card-title">JavaScript</h5>
                         <p class="card-text">
-                            JavaScript is a programming language that adds interactivity and dynamic features to web
-                            pages. It's essential for creating responsive user interfaces, handling events, and
-                            integrating with frameworks for modern web development.
+                            JavaScript is a programming language that adds interactivity and dynamic features to web pages. It's essential for creating responsive user interfaces, handling events, and integrating with frameworks for modern web development.
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="col" id="cards-row2">
-                <div class="card h-100 text-center w-75 p-3">
-                    <i class="fa-solid fa-triangle-exclamation fa-7x card-img-top" style="color: #bb2124;"></i>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card h-100 text-center">
+                    <i class="fa-solid fa-triangle-exclamation fa-7x card-img-top mt-3" style="color: #bb2124;"></i>
                     <div class="card-body">
                         <h5 class="card-title">Problem-Solving</h5>
                         <p class="card-text">
-                            I excel at analyzing challenges, identifying root causes, and developing effective
-                            solutions, especially in complex web development scenarios.
+                            I excel at analyzing challenges, identifying root causes, and developing effective solutions, especially in complex web development scenarios.
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="col" id="cards-row2">
-                <div class="card h-100 text-center w-75 p-3">
-                    <i class="fa-solid fa-comments fa-7x card-img-top" style="color: #003e8f;"></i>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card h-100 text-center">
+                    <i class="fa-solid fa-comments fa-7x card-img-top mt-3" style="color: #003e8f;"></i>
                     <div class="card-body">
                         <h5 class="card-title">Communication</h5>
                         <p class="card-text">
-                            I effectively convey technical concepts to diverse audiences, ensuring clear understanding
-                            and seamless collaboration in team environments.
+                            I effectively convey technical concepts to diverse audiences, ensuring clear understanding and seamless collaboration in team environments.
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="col" id="cards-row2">
-                <div class="card h-100 text-center w-75 p-3">
-                    <i class="fa-brands fa-react fa-7x card-img-top" style="color: #61dbfb;"></i>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card h-100 text-center">
+                    <i class="fa-brands fa-react fa-7x card-img-top mt-3" style="color: #61dbfb;"></i>
                     <div class="card-body">
                         <h5 class="card-title">React.js</h5>
                         <p class="card-text">
-                            React is a JavaScript library for building interactive UIs with reusable components. It
-                            optimizes performance with a virtual DOM and provides a declarative approach to manage
-                            complex interfaces efficiently.
+                            React is a JavaScript library for building interactive UIs with reusable components. It optimizes performance with a virtual DOM and provides a declarative approach to manage complex interfaces efficiently.
                         </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="contact-title">
-        <h2>Contact me</h2>
-        <i class="fa-solid fa-arrow-down fa-3x" style="color: #06d6a0; margin-top: 30px;" id="s2"></i>
-    </div>
+    
+    
+        
     <div class="section3-background">
-        <div class="cotact-field">
-            <form class="row-g-3" id="cotact-field">
-                <div class="col-md-5" id="first-name">
-                    <label for="first-name" class="form-label" id="s5">First name</label><br>
-                    <input type="text" class="form-cotrol" id="input-width1" required>
+        <div class="container" style="max-width: 600px;">
+            <div class="contact-title">
+                <h2>Contact me</h2>
+                <i class="fa-solid fa-arrow-down fa-3x" style="color: #06d6a0; margin-top: 30px;" id="s2"></i>
+            </div>
+            <form class="text-center">
+                <div class="mb-3 text-start">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="Enter your first name">
                 </div>
-                <div class="col-md-5" id="second-name">
-                    <label for="second-name" class="form-label">Second name</label><br>
-                    <input type="text" class="form-cotrol" id="input-width1" required>
+                <div class="mb-3 text-start ">
+                    <label for="secondName" class="form-label">Second Name</label>
+                    <input type="text" class="form-control" id="secondName" placeholder="Enter your second name">
                 </div>
-                <div class="col-md-11" id="email-field">
-                    <label for="email-address" class="form-label">Enter your Email</label>
-                    <input type="email" class="form-control" required>
+                <div class="mb-3 text-start ">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
                 </div>
-                <div class="col-md-11" id="telephone">
-                    <label for="phone-num" class="form-label">Phone number</label>
-                    <input type="number" name="phone" class="form-control" required />
+                <div class="mb-3 text-start ">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
                 </div>
-                <div class="form-floating col-md-11" id="text-area">
-                    <textarea class="form-control" placeholder="Leave a comment here"></textarea>
-                    <label for="floatingTextarea">Comments</label>
-                    <div class="col-12">
-                        <button class="btn" id="submit-button" type="submit">Submit <i
-                                class="fa-solid fa-check"></i></button>
-                    </div>
+                <div class="mb-3 text-start ">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" style="max-height: 150px;"
+                        placeholder="Enter your message"></textarea>
+                        
                 </div>
+                <button type="submit" class="btn " id="submit-button">Submit</button>
             </form>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

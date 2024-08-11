@@ -1,25 +1,32 @@
-.section1-background {
+body{
+    overflow-x: hidden;
+}
+
+.section1-background,
+.section2-background,
+.section3-background {
     width: 100vw;
-    height: 1530px;
-    background-image: url('./layered-waves-haikei.svg');
+    height: auto;
+    padding-bottom: 30rem;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+}
+
+/* Specific background images */
+.section1-background {
+    background-image: url('./layered-waves-haikei.svg');
 }
 
 .section2-background {
-    width: 100vw;
-    height: max-content;
-    background-image: url('./wave-haikei\ \(1\).svg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding-top: 16rem;
+    padding-bottom: 6rem;
+    background-image: url('./wave-haikei (1).svg');
 }
 
 .section3-background {
-    width: 100vw;
-    height: 800px;
+    padding-bottom: 100px;
     background-image: url('./blurry-gradient-haikei.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 nav {
@@ -52,7 +59,6 @@ nav {
 .section1 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
@@ -105,15 +111,6 @@ h4 {
     transform: translateY(-10%) scale(1.09, 1.11);
 }
 
-#icons-list {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 100px;
-    margin-right: 30px;
-}
-
 a {
     text-decoration: none;
     color: #fff9fb;
@@ -138,26 +135,12 @@ a {
 
 #about-title {
     color: #ffd166;
-    margin-left: 580px;
-    margin-top: 300px;
     font-family: "Kanit";
-}
-
-.image-portfolio {
-    background-color: #00cc96;
-    width: fit-content;
-    display: flex;
-    position: absolute;
-    margin-top: 390px;
-    left: 200px;
-    border-radius: 100px 100px 10px 10px;
-}
-
-#owener-image {
-    width: 300px;
-    height: 310px;
-    box-shadow: 0px 1px 15px rgb(94, 115, 119);
-    border-radius: 100px 100px 10px 10px;
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 20px;
+    position: relative;
+    top: 440px;
 }
 
 #about-text {
@@ -165,13 +148,88 @@ a {
     font-size: larger;
     font-family: "Kanit";
     color: #00cc96;
-    width: 1200px;
-    margin-left: 580px;
+    max-width: 1100px;
+    margin-top: 20px;
+    position: relative;
+    top: 420px;
+}
+
+.image-portfolio {
+    background-color: #00cc96;
+    border-radius: 100px 100px 10px 10px;
+    width: fit-content;
+    margin-bottom: 20px;
+    box-shadow: 0px 1px 15px rgb(94, 115, 119);
+    position: relative;
+    top: 400px;
+}
+
+#owner-image {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 100px 100px 10px 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about-title,
+    #about-text {
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .image-portfolio {
+        margin: 0 auto 20px auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .section1-background {
+        padding-bottom: 10rem;
+    }
+
+    .section2-background {
+        padding-top: 10rem;
+        padding-bottom: 3rem;
+    }
+
+    .section3-background {
+        padding-bottom: 60px;
+    }
+
+    #about-text {
+        font-size: medium;
+    }
+}
+
+@media (max-width: 576px) {
+    .section1-background {
+        padding-bottom: 5rem;
+    }
+
+    .section2-background {
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+    }
+
+    .section3-background {
+        padding-bottom: 40px;
+    }
+
+    #about-text {
+        font-size: smaller;
+    }
 }
 
 .cards-title {
     width: 100vw;
-    padding-top: 100px;
     background-color: var(--maincolor);
     color: white;
     text-align: center;
@@ -180,7 +238,7 @@ a {
 
 #cards-section {
     padding-top: 120px;
-    margin-left: 135px;
+
     font-family: "Kanit";
 }
 
@@ -189,67 +247,19 @@ a {
 }
 
 .contact-title {
-    background-color: #FCAF3C;
-    width: 104%;
-    padding-top: 140px;
+    padding-top: 90px;
     margin-left: -30px;
     text-align: center;
     text-transform: uppercase;
     overflow: hidden;
 }
 
-form {
-    position: absolute;
-    margin-top: 200px;
-    left: 630px;
-    padding: 30px;
+form{
     font-family: "Kanit";
-    text-align: center;
 }
-
-#cotact-field {
-    background-color: #ffffffe3;
-    box-shadow: 0.3px 0.3px 10px #bcbcbc92;
-    border-radius: 15px;
-    width: 800px;
-    height: 480px;
+form label{
+    font-weight: 500;
 }
-
-#first-name {
-    position: absolute;
-    left: 15px;
-    padding-top: 10px;
-}
-
-#second-name {
-    position: absolute;
-    right: 20px;
-    padding-top: 10px;
-}
-
-#email-field {
-    position: absolute;
-    top: 120px;
-}
-
-#telephone {
-    position: absolute;
-    top: 200px;
-}
-
-#text-area {
-    position: absolute;
-    top: 290px;
-}
-
-textarea {
-    max-height: 100px;
-}
-
-#input-width1 {
-    width: 300px;
-}
-
 #submit-button {
     background-color: #06d69e;
     border-radius: 15px;
