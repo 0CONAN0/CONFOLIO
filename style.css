@@ -207,6 +207,9 @@ a {
     #about-text {
         font-size: medium;
     }
+    #skills-title-h1{
+        margin-top: 10rem;
+    }
 }
 
 @media (max-width: 576px) {
@@ -225,6 +228,9 @@ a {
 
     #about-text {
         font-size: smaller;
+    }
+    #skills-title-h1{
+        margin-top: 18rem;
     }
 }
 

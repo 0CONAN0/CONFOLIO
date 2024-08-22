@@ -1,0 +1,185 @@
+:root {
+    --maincolor: #001122
+}
+
+body {
+    background-image: url(media/cool-background\ \(2\).png);
+    width: 100vw;
+    height: auto;
+    padding-bottom: 30rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    font-family: "Kanit";
+}
+
+nav {
+    background-color: var(--maincolor);
+    height: 90px;
+    text-transform: uppercase;
+    font-weight: 650;
+    font-size: large;
+    z-index: 99999;
+    width: auto;
+    border-bottom: #06d6a0 solid 3px;
+}
+
+#nav-image {
+    width: 200px;
+    height: 60px;
+    margin-left: 10px;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #06d6a0;
+    padding: 10px;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #ffd166;
+}
+
+.intro-text {
+    padding-top: 10rem;
+    padding-left: 2rem;
+}
+
+.projects-title {
+    color: #06d6a0;
+}
+
+@media (max-width: 768px) {
+    .intro-text {
+        margin-top: 5rem;
+    }
+}
+
+@media(min-width:768px) {
+    .intro-text {
+        margin-top: 1.2rem;
+        margin-bottom: -4rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .intro-text {
+        margin-top: 1.2rem;
+        margin-bottom: -4rem;
+        padding-left: 0.5rem;
+    }
+
+    .projects-title {
+        font-size: 3rem;
+    }
+
+    .projects-desc {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 576px) {
+    .intro-text {
+        margin-top: 1.2rem;
+        margin-bottom: -4rem;
+        padding-left: 0.5rem;
+    }
+
+    .projects-title {
+        font-size: 5rem;
+    }
+
+}
+
+
+
+img {
+    height: 190px;
+    width: 25rem;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.projects-title{
+    font-family: "Anurati";
+}
+
+.row {
+    position: relative;
+    top: 8rem;
+}
+
+.card-body {
+    background: rgb(2, 0, 36);
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(0, 17, 34, 1) 35%, rgba(0, 90, 108, 1) 100%);
+    border-radius: 0px 0px 20px 20px;
+}
+
+.card {
+    margin: 1.2rem;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 10px 10px 20px 20px;
+    box-shadow: 2px 2px 15px rgb(166, 166, 166);
+    background: var(--maincolor);
+    transition: all 0.5s ease;
+}
+
+.card:hover {
+    transform: translateY(-1%) scale(1.02, 1.04);
+}
+
+.arrowIcon {
+    color: #06d6a0;
+    position: relative;
+    top: 0.6rem;
+    left: 10rem;
+}
+
+.arrowIcon:hover {
+    color: #02ae80;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.contact-title {
+    position: relative;
+    top: 300px;
+    margin-left: -30px;
+    text-align: center;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+form {
+    font-family: "Kanit";
+    position: relative;
+    top: 300px;
+}
+
+form label {
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+#submit-button {
+    background-color: #06d69e;
+    border-radius: 15px;
+    box-shadow: 0px 1px 15px rgb(151, 172, 176);
+    border: solid 0px;
+    font-weight: 560;
+    font-family: "Kanit";
+    font-size: large;
+    text-transform: uppercase;
+    color: #014455;
+    width: 240px;
+    height: 40px;
+    position: relative;
+    margin-top: 40px;
+}
+
+#submit-button:hover {
+    background-color: #00b383;
+}
